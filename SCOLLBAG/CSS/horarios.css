@@ -1,0 +1,243 @@
+body , ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  a:hover {
+     border-radius: 50px;
+      background: rgb(150, 51, 150);
+   }
+  
+  #logo {
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#570d5a;
+  }
+  /*  menu/*/
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+
+  .sair{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    
+}
+.sair:hover{
+  border-radius: 50px;
+  background: rgb(150, 51, 150);
+
+}
+  /* menu mobile */
+  @media (max-width: 600px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #e7e7e7;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    /* botão mobile */
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    /* menu hamguer */
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+}  
+/* Fase 1: elementos basicos */
+body {
+    width:700px;
+    margin: 15px auto;
+    font-family: Arial, "MS Trebuchet", sans-serif;
+    background-color: #500846;
+}
+ 
+/*
+Adiciona uma linha a baixo dos elementos: h1, h2, h3
+*/
+h1.sub {
+    color: whitesmoke;
+    width: 100%;
+    border-bottom-style: solid;
+}
+ 
+h2.sub, h3.sub {
+    color: #b73aa6;
+    width: 100%;
+    border-bottom-style: solid;
+}
+
+/* Fase 2: elementos basicos */
+/*
+  Adiciona uma linha abaixo dos 
+  elementos p da classe sub
+*/
+p.sub {
+    font-weight: bold;
+    color: rgba(253, 252, 253, 0.945);
+    border-bottom-style: solid;
+}
+ 
+/*  Footer Pager  */
+footer.pagina {
+    background-color: black;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: right;
+    color: white;
+}
+ 
+footer.pagina a {
+    text-decoration: none;
+    color: beige;
+}
+/* Fase 3 - Table */
+/* Adicionadno bordas as tebelas */
+table.horario {
+    width:100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+ 
+table.horario tr {
+    border: 1px solid black;
+}
+ 
+table.horario td,
+table.horario th{
+    border: 1px solid black;
+}
+
+/* Fase 4 - Tabela - Ajustando os espaços */
+/* Adicionando espaço entre o conteúdo das
+    celulas e as bordas */
+    table.horario th,
+    table.horario td {
+        padding: 15px;
+    }
+     
+    /*Alinhando os cabeçalhos à esquerda*/
+    table.horario th {
+        text-align: left;
+    }
+
+/* Fase 5 */
+/* Formatando o Caption da Tabela */
+table.horario caption {
+    font-weight: bolder;
+    color:rgb(129, 36, 125);
+    text-align: right;
+    padding-bottom: 10px;
+}
+/* Formatando as celulas de cabeçalho */
+ 
+table.horario thead th,
+table.horario tfoot th,
+table.horario tbody th {
+    background-color: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    padding: 5px;
+    border:none;
+}
+
+/* Fase 6 - Zebrando */
+/* Linhas Pares*/
+table.horario tr:nth-child(even){
+    background-color:#eeb0f7;
+}
+ 
+/* Linhas Impares */
+table.horario tr:nth-child(odd){
+    background-color: purple;
+    background-color: #9d82a1;
+}
+ 
+/* Efeito Hover */
+table.horario tr:hover{
+    background-color:rgb(80, 6, 92);
+}
+/* Fase 7 - Removendo as bordas da Tabela */
+/* Remover bordas*/
+table.horario tr,
+table.horario td,
+table.horario th{
+    border:none;
+}

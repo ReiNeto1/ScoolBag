@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/CastroStyle.css">
+    
+    <title>ScoolBag - Cadastro</title>
+</head>
+<body>
+    <p >Informe seus dados </p><br><br>
+    <form>
+    <fieldset class="grupo">
+        <div class="grupo">
+            <label for="Nome"><strong>Nome</strong></label>
+            <input type="text" name="Nome" id="Nome" required>
+            <label for="Sobrenome"><strong>Sobrenome</strong></label> 
+            <input type="text" name="Sobrenome" id="Sobrenome" required>
+            <br><br>
+        </div>
+      
+        <div class="grupo">
+            <label for="Email"><strong>Email</strong></label> 
+            <input type="text" name="Email" id="Email" required> 
+            <label for="Telefone"><strong>Telefone</strong></label>
+            <input type="text" name="telefone" id="Telefone">
+            <br><br>
+           
+        </div>
+
+        <div class="grupo">
+            <label for="Emdereço"><strong>Endereço</strong></label><line>
+            <input type="text" name="endereço" id="Endereço"> </line>
+
+            <label for="Complemento"><strong>Complemento</strong></label> 
+            <input type="text" name="complemento" id="Complemento"><br><br> 
+        
+            </div>
+
+        <div class="grupo">
+            <label> <strong>Filhos</strong> </label>  
+            <select id="filhos"><br><br>
+            <option selected disabled value="">Selecione</option>
+            <option> Sim</option>
+            <option>Não</option>
+        </select><br><br>
+        </div>
+        <div class="grupo">
+        <label><strong>Quantos</strong></label>
+        <input type="text" name="quantos" id="Quantoss"><br><br>
+        </div>
+
+        <div class="grupo" >
+            <label><strong>Nome da Escola</strong></label>
+            <input type="text" name "Escola" id="Escola"><br><br>
+
+          <label><strong>Escolaridade</strong></label>
+            <select id="Escolaridade" required>
+                <option selected disabled value> Selecione</option>
+                <option>Fundamental</option>
+                <option>Fundamental (Incompleto)</option>
+                <option>Médio </option>
+                <option>Médio (Incompleto)</option>
+                <option>Superio</option>
+                <option>Superior (Imcompleto)</option>
+            </select>
+            <br><br>
+          </div>
+    </fieldset>
+
+    <fieldset class="grupo">
+        <h><strong> Experiencia de Trabalho</strong></h> <br>  
+            <div class="grupo"><br>
+                <label><strong>Empresas onde já trabalhou</strong></label><br>
+            <input type="text" name="Eempresa" id="Empresa"><br><br>
+            
+        </div>
+            
+         <div class="grupo">
+
+                <label><strong>Cargo que deseja</strong></label><br>
+                <input type="text" name="Cargo" id="cargo"> <br><br>
+            </div>
+          <div>
+            <label><strong>Conte um pouo da sua experiência:</strong></label><br>
+            <textarea row="6" style="width: 35em;" id="experiencia" name="experiencia" required></textarea>  <br><br>
+
+            </div>
+            
+            <div>
+            <h>Anexar Curriculo</h>
+            
+            <input type="hidden" name="MAX_FILE_SIZE" value="4194304">  
+            <input type="file">
+
+        </div>
+        
+     <div > 
+        
+    <pt></pt><button class="botão " type="submit">Concluir</button>
+        
+    </div>
+</fieldset>
+</form>
+
+</body>
+</html>

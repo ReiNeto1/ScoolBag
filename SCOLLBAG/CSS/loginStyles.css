@@ -1,0 +1,163 @@
+/*  @import url('https://fonts.googleapis.com/css2? family = Abrir + Sans & display = swap');
+ */
+ *{
+     margin: 0;
+     padding: 0;
+     border: 0;
+     box-sizing: border-box;
+     font-family: "Laje Josefin" 'Times New Roman', Times, serif; 
+ }
+ body{
+    background: linear-gradient(45deg, #4e107e, #000000e8);
+    color:white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+
+main{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    margin-left: 300px;
+    color: rgb(250, 246, 246);
+     font-size: 3rem;
+     margin-bottom: 3rem;
+}
+
+main .social-midia{
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+}
+
+main .social-midia a {
+    text-decoration: none;
+}
+
+main .social-midia img{
+    width: 36px;
+    margin-left: 2rem;
+}
+
+main .social-midia a:first-child img{
+    margin-left: 0;
+}
+
+main form{
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+main form input{
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0 .5;
+    margin-top: 1rem;
+    outline: none;
+    color:rgba(250, 246, 246);
+    font-size: 1rem;
+    border: 1px solid ;
+    border-radius: 8px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+main form input {
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 60%;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 32px;
+    background: #b963ff;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #c952d4;
+}
+
+
+
+section.images {
+    width: 45vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4rem;
+}
+
+a {
+    cursor: pointer;
+    width: 40%;
+    
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+    padding: 1.5rem;
+} 
+
+a:hover{
+    color: #c952d4;
+}
+section.images img {
+    width: 100%;
+}
+
+section.images .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #e8c0d6, #9c63a4);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;
+}
